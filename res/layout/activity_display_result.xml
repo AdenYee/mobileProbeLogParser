@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.douwifi.yiks.tz.DisplayResultActivity">
+
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDetaTimes"
+            android:layout_width="0pt"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="17:21:12-19:21:11"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal">
+        </TextView>
+
+        <GridView
+            android:id="@+id/gvFileChooser"
+            android:layout_width="0pt"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:columnWidth="90dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="1"
+            android:stretchMode="columnWidth"
+            android:layout_toRightOf="@id/tvDetaTimes"
+            android:verticalSpacing="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnWrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:text="返回" />
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:text="丢弃" />
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:text="保存" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tvEmptyHint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/file_no_good_date"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" >
+    </TextView>
+
+
+</LinearLayout>

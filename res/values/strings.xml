@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">移动采集</string>
+    <string name="file_no_good_date">没有数据</string>
+    <string name="file_no_exists">日志文件clifile不存在\n请把它放到SD根目录</string>
+    <string name="no_history">没有历史纪录</string>
+    <string name="save_history_success">保存成功</string>
+    <string name="save_history_title">请输入纪录名</string>
+    <string name="save_history_save">保存</string>
+</resources>
