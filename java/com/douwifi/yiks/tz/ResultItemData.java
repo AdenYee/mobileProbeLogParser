@@ -1,5 +1,7 @@
 package com.douwifi.yiks.tz;
 
+import com.douwifi.yiks.tz.model.DetaTime;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
