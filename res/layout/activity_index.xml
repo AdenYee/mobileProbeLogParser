@@ -13,11 +13,15 @@
         android:id="@+id/btnSet"
         android:layout_width="match_parent"
         android:layout_height="90dp"
-        android:text="统计设置"/>
+        android:drawableLeft="@drawable/ic_btn_settime"
+        android:text="统计设置"
+        android:textSize="20dp" />
     <Button
         android:id="@+id/btnHistory"
         android:layout_width="match_parent"
         android:layout_height="90dp"
         android:layout_below="@+id/btnSet"
+        android:drawableLeft="@drawable/ic_btn_history"
+        android:textSize="20dp"
         android:text="历史纪录"/>
 </RelativeLayout>
