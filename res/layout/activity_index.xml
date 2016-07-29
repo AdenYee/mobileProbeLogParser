@@ -9,13 +9,15 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.douwifi.yiks.tz.IndexActivity">
 
+
     <Button
         android:id="@+id/btnSet"
         android:layout_width="match_parent"
         android:layout_height="90dp"
         android:drawableLeft="@drawable/ic_btn_settime"
         android:text="统计设置"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:padding="30dp" />
     <Button
         android:id="@+id/btnHistory"
         android:layout_width="match_parent"
@@ -23,5 +25,6 @@
         android:layout_below="@+id/btnSet"
         android:drawableLeft="@drawable/ic_btn_history"
         android:textSize="20dp"
+        android:padding="30dp"
         android:text="历史纪录"/>
 </RelativeLayout>
